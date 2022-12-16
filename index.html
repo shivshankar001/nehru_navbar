@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>Responsive Navigation Menu</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+   <nav>
+      <div class="logo-image">
+         <img src="download.jpg" class="active">
+      </div>
+      <div class="logo">
+         Nehru Hall Of Residence
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn" onclick="myfunction()">
+         <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Room Allocation</a></li>
+         <li><a href="#">Boarder Detail</a></li>
+         <li><a href="#">Complaint</a></li>
+         <li><a href="#">HMC</a></li>
+         <li><a href="#">Proposal</a></li>
+         <li><button id="lg">Login</button></li>
+         <li><button id="sg">Sign Up</button></li>
+      </ul>
+   </nav>
+   <div class="container">
+      <div class="image-container">
+         <img src="image_1.jpg" id="content1" class="active">
+         <img src="image_2.jpeg" id="content2">
+         <img src="image_3.jpeg" id="content3">
+         <img src="image_4.jpeg" id="content4">
+      </div>
+      <div class="dot-container">
+         <button onclick="dot(1)"></button>
+         <button onclick="dot(2)"></button>
+         <button onclick="dot(3)"></button>
+         <button onclick="dot(4)"></button>
+      </div>
+      <div class="slogan">
+         "Once a Nehruite <br>
+         always a Nehruite"
+      </div>
+      <button id="prev" onclick="prev()"> &lt; </button>
+      <button id="next" onclick="next()"> &gt; </button>
+   </div>
+</body>
+<script src="script.js"></script>
+
+</html>
